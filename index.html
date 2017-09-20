@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X-Men Trivia Game</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><img src="assets/images/x-men-trivia-header1.png" alt="X-Men"> </header>
+    <h1>TRIVIA</h1>
+<!-- Black background & container for quiz -->
+    <div class="quest-bkgd">
+        <div class="quiz-container">
+<!-- Trivia questions only -->
+            <div class="all-trivia-questions">
+                <div class="question-1">
+                    <h2>Which club did Sebastian Shaw belong to?</h2>
+                    <input type="radio" name="q1" value="a" class="wrong-1">
+                    <label>The Jellybean Club</label>
+                    <input type="radio" name="q1" value="b" class="wrong-1">
+                    <label>Patrick Stewart Fan Club</label>
+                    <input type="radio" name="q1" value="c" class="correct-1">
+                    <label>The Hellfire Club</label>
+                    <input type="radio" name="q1" value="d" class="wrong-1">
+                    <label>Dollar Shade Club</label>
+                </div>
+                <div class="question-2">
+                    <hr>
+                    <h2>Where did Wolverine's steel claw implant procedure take place?</h2>
+                    <input type="radio" name="q2" value="a" class="wrong-2">
+                    <label>Sharper Image</label>
+                    <input type="radio" name="q2" value="b" class="correct-2">
+                    <label>Alkali Lake</label>
+                    <input type="radio" name="q2" value="c" class="wrong-2">
+                    <label>Ginsu City</label>
+                    <input type="radio" name="q2" value="d" class="wrong-2">
+                    <label>Xavier's House</label>
+                </div>
+                <div class="question-3">
+                    <hr>
+                    <h2>What is the name of Jean Grey's powerful and destructive alter ego?</h2>
+                    <input type="radio" name="q3" value="a" class="wrong-3">
+                    <label>Hurricane Alicia</label>
+                    <input type="radio" name="q3" value="b" class="wrong-3">
+                    <label>Britney</label>
+                    <input type="radio" name="q3" value="c" class="wrong-3">
+                    <label>Little Debbie</label>
+                    <input type="radio" name="q3" value="d" class="correct-3">
+                    <label>Phoenix</label>
+                </div>
+                <div class="question-4">
+                    <hr>
+                    <h2>What happens when Rogue touches someone with her bare hands?</h2>
+                    <input type="radio" name="q4" value="a" class="wrong-4">
+                    <label>They get weirded out</label>
+                    <input type="radio" name="q4" value="b" class="correct-4">
+                    <label>She absorbs their life force</label>
+                </div>
+                <br>
+                <div class="question-4" id="line-break">
+                    <input type="radio" name="q4" value="c" class="wrong-4">
+                    <label>They ask her out to lunch</label>
+                    <input type="radio" name="q4" value="d" class="wrong-4">
+                    <label>MC Hammer starts playing</label>
+                </div>
+                <div class="question-5">
+                    <hr>
+                    <h2>What is Charles Xavier's nick-name name?</h2>
+                    <input type="radio" name="q5" value="a" class="wrong-5">
+                    <label>Chuck D</label>
+                    <input type="radio" name="q5" value="b" class="wrong-5">
+                    <label>X to the Z</label>
+                    <input type="radio" name="q5" value="c" class="correct-5">
+                    <label>Professor X</label>
+                    <input type="radio" name="q5" value="d" class="wrong-5">
+                    <label>Feels on Wheels</label>
+                </div>
+                <div class="question-6">
+                    <hr>
+                    <h2>What can Magneto control with his mutant powers?</h2>
+                    <input type="radio" name="q6" value="a" class="wrong-6">
+                    <label>Peanut Butter</label>
+                    <input type="radio" name="q6" value="b" class="wrong-6">
+                    <label>Old Telephone Books</label>
+                    <input type="radio" name="q6" value="c" class="wrong-6">
+                    <label>Trivia Quizes</label>
+                    <input type="radio" name="q6" value="d" class="correct-6">
+                    <label>Metal</label>
+                    <hr> </div>
+<!-- Extra space for Finish button -->                
+                <footer>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </footer>
+            </div>
+<!-- Finish button -->
+            <h3>FINISH</h3>
+<!-- Timer display -->
+            <div id="count-down">
+                <p>Time Remaining:</p>
+                <p id="countdownDisp">45 Seconds</p>
+            </div>
+        </div>
+    </div>
+<!-- Start Screen element -->
+    <div class="end-result"> </div><span id="start-game"><img src="assets/images/x-start.png" alt="START">START</span>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+html {
+    background-image: 
+    url('../images/x-men-wolv-prof-bkgd.png'), 
+    url('../images/silver-grated-bkgd.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, scroll;
+    background-size: 1350px 1350px;
+    min-width: 1100px;
+    background-color: black;
+}
+
+body {
+    color: #a49fc4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    min-width: 1100px;
+    z-index: 1;
+}
+
+.quiz-container {
+    display: block;
+    width: 100%;
+}
+
+.all-trivia-questions {
+    display: block;
+    position: relative;
+    width: 675px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quest-bkgd {
+    display: block;
+    width: 675px;
+    height: 100%;
+    padding-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+h1,
+h3,
+.end-result,
+#start-game {
+    font-family: 'Archivo Black';
+    font-style: italic;
+    color: #c3c3c3;
+    text-shadow: 0 1px 0 #ABABAB, 
+    0 2px 3px #828282, 
+    0 3px 0 #4F4F4F, 
+    0 4px 0 #4F4F4F, 
+    0 5px 0 #4F4F4F, 
+    0 6px 1px rgba(0, 0, 0, 0.7), 
+    0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 4.3vw;
+    position: fixed;
+    top: 17px;
+    left: 53.5%;
+    z-index: 1;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    background-color: #c9c9c9;
+    position: relative;
+    bottom: 10px;
+    opacity: .1;
+}
+
+#line-break {
+    position: relative;
+    bottom: 35px;
+    margin-bottom: -30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 85px;
+    width: 190px;
+    height: 90px;
+    display: block;
+    position: absolute;
+    bottom: -182px;
+    left: 43%;
+    background-image: url(../images/x-men-finish.png);
+    cursor: pointer;
+}
+
+.end-result {
+    font-size: 22px;
+    text-align: center;
+    width: 400px;
+    height: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 250px;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.72), transparent);
+    z-index: 0;
+}
+
+#start-game {
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 250px;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.72), transparent);
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    position: relative;
+    bottom: 2px;
+    z-index: 0;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+label::before {
+    content: " ";
+    position: absolute;
+    top: 8px;
+    left: -25.55px;
+    width: 20px;
+    height: 20px;
+    border: 6px solid #8b8b8b;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+input[type="radio"] + label::before {
+    border-radius: 18px;
+}
+
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+}
+
+#count-down {
+    color: #d0bf93;
+    height: 250px;
+    width: 200px;
+    padding-top: 50px;
+    padding-right: 16px;
+    font-family: 'Cabin';
+    font-size: 24px;
+    position: fixed;
+    top: -1px;
+    right: 100px;
+    text-align: right;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.72), transparent);
+}
